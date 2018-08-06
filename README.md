@@ -9,6 +9,7 @@
 ## @handsometechs/protocol-client -> API
 
 ### tcp初始化
+```javascript
 var tcpClient = require('@handsometechs/protocol-client').tcpClient;
 var use_tcpClient = new tcpClient(PORT,HOST);
 
@@ -26,6 +27,7 @@ var use_tcpClient = new tcpClient(PORT,HOST);
 关闭连接
 
 ### udp初始化
+```javascript
 var udpClient = require('@handsometechs/protocol-client').udpClient;
 var use_udpClient = new udpClient();
 
@@ -89,7 +91,7 @@ var use_udpClient = new udpClient();
 
 ## Examples
 
-### Client
+### tcpClient
 
 ```javascript
 var tcpClient = require('@handsometechs/protocol-client').tcpClient;
@@ -104,6 +106,24 @@ var send = {
 };
 use_tcpClient.write(send);
 use_tcpClient.message(function (data) {
+    console.log('data',data);
+})
+
+### udpClient
+
+```javascript
+var udpClient = require('@handsometechs/protocol-client').udpClient;
+var use_udpClient = new udpClient(PORT,HOST);
+var DevEUI = use_tcpClient.RandomBuffer(8);
+var DevNonce = use_tcpClient.RandomBuffer(2);
+var send = {
+    'DevEUI' : DevEUI,
+    'DevNonce' : DevNonce
+};
+var HOST = 3000;
+var PORT = 'localhost';
+use_udpClient.write(send,PORT,HOST);
+use_udpClient.message(function (data) {
     console.log('data',data);
 })
 
