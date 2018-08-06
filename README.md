@@ -10,8 +10,10 @@
 
 ### tcp初始化
 
-##### var tcpClient = require('@handsometechs/protocol-client').tcpClient;
-##### var use_tcpClient = new tcpClient(PORT,HOST);
+```javascript
+var tcpClient = require('@handsometechs/protocol-client').tcpClient;
+var use_tcpClient = new tcpClient(PORT,HOST);
+```
 
 #### wirte(message)
 发送数据
@@ -28,8 +30,10 @@
 
 ### udp初始化
 
-##### var udpClient = require('@handsometechs/protocol-client').udpClient;
-##### var use_udpClient = new udpClient();
+```javascript
+var udpClient = require('@handsometechs/protocol-client').udpClient;
+var use_udpClient = new udpClient();
+```
 
 #### wirte(message,port,host)
 发送数据
@@ -108,6 +112,7 @@ use_tcpClient.write(send);
 use_tcpClient.message(function (data) {
     console.log('data',data);
 })
+```
 
 ### udpClient
 
@@ -126,4 +131,5 @@ use_udpClient.write(send,PORT,HOST);
 use_udpClient.message(function (data) {
     console.log('data',data);
 })
+```
 
