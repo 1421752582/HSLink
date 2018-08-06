@@ -9,9 +9,9 @@
 ## @handsometechs/protocol-client -> API
 
 ### tcp初始化
-```javascript
-var tcpClient = require('@handsometechs/protocol-client').tcpClient;
-var use_tcpClient = new tcpClient(PORT,HOST);
+
+##### var tcpClient = require('@handsometechs/protocol-client').tcpClient;
+##### var use_tcpClient = new tcpClient(PORT,HOST);
 
 #### wirte(message)
 发送数据
@@ -27,9 +27,9 @@ var use_tcpClient = new tcpClient(PORT,HOST);
 关闭连接
 
 ### udp初始化
-```javascript
-var udpClient = require('@handsometechs/protocol-client').udpClient;
-var use_udpClient = new udpClient();
+
+##### var udpClient = require('@handsometechs/protocol-client').udpClient;
+##### var use_udpClient = new udpClient();
 
 #### wirte(message,port,host)
 发送数据
