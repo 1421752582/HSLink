@@ -1,5 +1,5 @@
 {
-    "name": "node-client",
+    "name": "@handsometechs/protocol-client",
     "version": "1.0.0",
     "description": "virtual node client",
     "main": "index.js",
@@ -8,7 +8,7 @@
         "test": "test"
     },
     "scripts": {
-        "test": "mocha test/client-test.js"
+        "test": "mocha test/client-test.js --exit"
     },
     "author": "ytf",
     "license": "ISC",

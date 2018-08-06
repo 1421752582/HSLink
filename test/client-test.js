@@ -134,7 +134,7 @@ describe('make a test for tcp Client',function(){
         };
         use_tcpClient.write(send);
         use_tcpClient.message(function (data) {
-            data.from(msg,'hex').toString().should.equal('test')
+            Buffer.from(data,'hex').toString().should.equal('test')
             done();
         })
 
