@@ -10,6 +10,13 @@
     "scripts": {
         "test": "mocha test/client-test.js --exit"
     },
+     "publishConfig": {
+        "access": "public"
+    },
+    "repository": {
+	"type": "git",
+	"url": "https://github.com/handsometechs/HSLink"
+    },
     "author": "ytf",
     "license": "ISC",
     "dependencies": {
