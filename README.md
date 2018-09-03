@@ -3,15 +3,15 @@
 
 ### Installation
 
-	npm i --save @handsometechs/protocol-client
+	npm i --save handsometechs-protocol-client
 
 
-## @handsometechs/protocol-client -> API
+## handsometechs-protocol-client -> API
 
 ### tcp初始化
 
 ```javascript
-var tcpClient = require('@handsometechs/protocol-client').tcpClient;
+var tcpClient = require('handsometechs-protocol-client').tcpClient;
 var use_tcpClient = new tcpClient(PORT,HOST);
 ```
 
@@ -31,7 +31,7 @@ var use_tcpClient = new tcpClient(PORT,HOST);
 ### udp初始化
 
 ```javascript
-var udpClient = require('@handsometechs/protocol-client').udpClient;
+var udpClient = require('handsometechs-protocol-client').udpClient;
 var use_udpClient = new udpClient();
 ```
 
@@ -98,7 +98,7 @@ var use_udpClient = new udpClient();
 ### tcpClient
 
 ```javascript
-var tcpClient = require('@handsometechs/protocol-client').tcpClient;
+var tcpClient = require('handsometechs-protocol-client').tcpClient;
 var HOST = 3000;
 var PORT = 'localhost';
 var use_tcpClient = new tcpClient(PORT,HOST);
@@ -117,7 +117,7 @@ use_tcpClient.message(function (data) {
 ### udpClient
 
 ```javascript
-var udpClient = require('@handsometechs/protocol-client').udpClient;
+var udpClient = require('handsometechs-protocol-client').udpClient;
 var use_udpClient = new udpClient(PORT,HOST);
 var DevEUI = use_tcpClient.RandomBuffer(8);
 var DevNonce = use_tcpClient.RandomBuffer(2);
