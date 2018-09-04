@@ -8,12 +8,14 @@
 
 ## handsometechs-protocol-client -> API
 
-### tcp初始化
+### tcp类
 
 ```javascript
 var tcpClient = require('handsometechs-protocol-client').tcpClient;
 var use_tcpClient = new tcpClient(PORT,HOST);
 ```
+
+### tcp方法
 
 #### wirte(message)
 发送数据
@@ -28,12 +30,14 @@ var use_tcpClient = new tcpClient(PORT,HOST);
 #### end()
 关闭连接
 
-### udp初始化
+### udp类
 
 ```javascript
 var udpClient = require('handsometechs-protocol-client').udpClient;
 var use_udpClient = new udpClient();
 ```
+
+### udp方法
 
 #### wirte(message,port,host)
 发送数据
@@ -50,7 +54,7 @@ var use_udpClient = new udpClient();
 #### end()
 关闭连接
 
-##公有方法
+###公有方法
 
 #### DevEUI(param)
 接收数据
